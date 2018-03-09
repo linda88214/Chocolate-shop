@@ -1,0 +1,12 @@
+<span><%= link_to 'All customers', customers_path%></span>
+<br>
+<h2><%= @customer.name %></h2>
+
+
+<p>Age: <i><%= @customer.age %></i></p>
+
+<p>Gender: <i><%= @customer.gender%></i></p>
+<br>
+
+<%= link_to 'Delete customer', customer_path(@customer), method: :delete %>
+<%= link_to 'Edit customer', edit_customer_path(@customer) %>

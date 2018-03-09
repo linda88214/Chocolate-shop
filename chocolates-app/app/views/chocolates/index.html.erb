@@ -1,0 +1,19 @@
+<h1>All Chocolates</h1>
+
+<% if @chocolates.empty? %>
+	No chocolates! 
+
+
+<% else %>
+
+<ul>
+	<% @chocolates.each do |chocolate| %>
+	<li><%= link_to chocolate.name, chocolate_path(chocolate)%></li>
+	<% end %>
+</ul>
+
+<%= link_to "New Chocolate", new_chocolate_path %>
+<% end %>
+
+<br>
+<%= link_to "All Customers", customers_path %>

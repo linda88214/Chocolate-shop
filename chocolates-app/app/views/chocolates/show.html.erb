@@ -1,0 +1,15 @@
+<span><%= link_to 'All chocolates', chocolates_path%></span>
+<br>
+<h2><%= @chocolate.name %></h2>
+
+Description:
+<p><i><%= @chocolate.flavor %></i></p>
+<br>
+Price:
+<p><i>$<%= @chocolate.price%>.00</i></p>
+<br>
+Customer:
+<p><i><%= @customer.name%></i></p>
+
+<%= link_to 'Delete chocolate', chocolate_path(@chocolate), method: :delete %>
+<%= link_to 'Edit Chocolate', edit_chocolate_path(@chocolate) %>

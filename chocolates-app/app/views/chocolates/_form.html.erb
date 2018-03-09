@@ -1,0 +1,8 @@
+<%= form_for @chocolate do |form| %>
+  Name: <%= form.text_field :name %></br>
+  Flavor: <%= form.text_field :flavor %></br>
+  Price: <%= form.text_field :price %><br>
+  Customer Id: <%= form.text_field :customer_id%>
+  </br>
+  <%= form.submit %>
+<% end %>
